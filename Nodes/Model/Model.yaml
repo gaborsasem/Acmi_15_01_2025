@@ -1,4 +1,5 @@
 Name: Model
+Id: g=b162038fb840e8e8980b83771e680cec
 Type: ModelCategoryFolder
 Children:
 - Name: Variable1
@@ -16,3 +17,68 @@ Children:
   - Name: Variable3
     Type: BaseDataVariableType
     DataType: Int32
+- Name: ArrayBit
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+- Name: Motore
+  Id: g=5bdaf94bbd00ecd734f48a5af2766ce2
+  Supertype: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Motore1
+  Id: g=6e2dce8f6fad8836f78771ac0a672ce2
+  Type: Motore
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: Motore2
+  Id: g=f68b0c486b5068b97c8ed8a20a6b56b1
+  Type: Motore
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 60
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Motore3
+  Id: g=2ac809af71ffc8aca58e43fe327b70a3
+  Type: Motore
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
