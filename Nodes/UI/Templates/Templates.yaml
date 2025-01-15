@@ -1,0 +1,18 @@
+Name: Templates
+Type: FolderType
+Children:
+- Name: MySubscreenType
+  Id: g=0cc10e147b3e8003c187444ac46630f0
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
