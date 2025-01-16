@@ -296,3 +296,92 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/Acmi_15_01_2025/Model/Motore"
+- File: ChangeUserForm/ChangeUserForm.yaml
+- File: UserEditor/UserEditor.yaml
+- Name: DisplayUnitaMisura
+  Id: g=ff59ed4bb9ace5b30d4983d0764d9e43
+  Supertype: RowLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: SpinBox1
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AnalogVariable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+        - Name: EUMode
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Format
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "f2"
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AnalogVariable1/EngineeringUnits/DisplayName"
+        Children:
+        - Name: EUMode
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: AnalogVariable1
+    Type: AnalogItemType
+    DataType: Float
+    Children:
+    - Name: EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseDataVariableType
+        DataType: Double
+      - Name: High
+        Type: BaseDataVariableType
+        DataType: Double
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: -1
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText

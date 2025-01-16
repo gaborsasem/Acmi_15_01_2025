@@ -1,0 +1,684 @@
+Name: AllarmiScript
+Id: g=e7527c11f1369fbcf71806b2dbb618ae
+Type: FolderType
+Children:
+- Name: Allarme0
+  Id: g=ccaabfd3e9154d92b33943c43b28f214
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=775f461d06a879a238d71ed1cef1275d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ea29571c9fa5b635a7c645a4b1a55d69
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=972a9fb119f34933ae54bc498d5b54b8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[0]"
+      Children:
+      - Name: Mode
+        Id: g=316a26bf973644ccb9f521c0d9d332f9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7c651f005c37a6b9247e9924c5bccd6b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=466898d7a033887bfef49fd82021121c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_0"}
+- Name: Allarme1
+  Id: g=db9bd9e44e1e4b3ba84297826a672f7d
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=2257f0dd8551267bbf3d4f8a1319fa12
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5a1e31951e34a9410dc24526ecda1960
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0658fec204eb4041939cd368ba05c7d7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[1]"
+      Children:
+      - Name: Mode
+        Id: g=88622a60ba094d0abbfb00fca2d2f17d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=04b7968f75519c9e6e8739ceced0c19b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=9fdee0432421eda11a697a698f4a07a0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_1"}
+- Name: Allarme2
+  Id: g=ddf8e28eaeee4ad9a34cabb37baac85c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=813750e28181bc359da70424c46c81bd
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=542b30c8ccfaf35bdb5ea4a454aea0bf
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=455f62087ee44e1e96eeda97ff0d8d27
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[2]"
+      Children:
+      - Name: Mode
+        Id: g=beef4ee8324840b1a9a8da5725c16dcf
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=22357a943050a5b0fa0c4b1cdd07a64b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=113eeabafa30b8d55c9d8b6656aef1d7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_2"}
+- Name: Allarme3
+  Id: g=421f43a00a3645d687588a73985d4857
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e4c9626c5dc262ec068e1fff4c0d5bb9
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=28a073479ffb696b2c430eb5b602f31d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=4b25585d7d304f59bd98db85bb59e1c9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[3]"
+      Children:
+      - Name: Mode
+        Id: g=4028804b3df44e71be936b4693669adb
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=900bd2f4b1f90be356155db1e6c3367c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=903ee15f0f83887e101aeb92d3e990e1
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_3"}
+- Name: Allarme4
+  Id: g=6566064d0bac461cbe51ccf541d07a73
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ce4fd15485977bdf2b27b2c4ae31d4d9
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d89d4b2c0a1f810500cd722f959e862f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=756d14c796a3454fbc576e3c323633fb
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[4]"
+      Children:
+      - Name: Mode
+        Id: g=ea28ce5389b5405f97785486d8e89dad
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d90a05c5eb92dc2406b451587886f48d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=5338fb000440f795aa8e5e420e0b1d74
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_4"}
+- Name: Allarme5
+  Id: g=8c7527045f89451b905079cd84dd94a9
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=092a383b3797969a1d0ca9de63c2f171
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=bb5d57e81337e8877ea96639ec69c9e5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=26ac0f6eb9da48219f314893e60b6631
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[5]"
+      Children:
+      - Name: Mode
+        Id: g=c4e61876bba143608a28412b9debc43d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=402be29b9668fa0eec7afd28662fedad
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=7a866f72d4e8fd1fef92959b5a7d401e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_5"}
+- Name: Allarme6
+  Id: g=4c8280f087de41c48d493ad3dbb4ec3c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=0894982ad2a6c9f1a383b2484aa14d7e
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=87f6444cb601fe3c48322469adf25b58
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=256b6b5c11024780a98022b49d5b049a
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[6]"
+      Children:
+      - Name: Mode
+        Id: g=be5ee9883bf54bada2773a0baccb4202
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2d40ed9c83a8c6b141a754e51b66b8b6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=ee801b95d6bbbeb6042b901bf2bd218e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_6"}
+- Name: Allarme7
+  Id: g=939faa0e852242cda7e4bba92f829a6c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=bbd4eb637205b3ff0a37955201386168
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6f8615c98cef70f773647c6549f9783b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c8d2edbd234d4fe696a246e5d63951df
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[7]"
+      Children:
+      - Name: Mode
+        Id: g=5fe927d6be4e422087a72fc470fb1380
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=6eb65633ab60c223f59201438722a057
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=ba4f77114f539719d07a201054af3bdd
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_7"}
+- Name: Allarme8
+  Id: g=24bb5a38051d4ce98f93e79abdfd2bcc
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=01818a69c444d70ab3919595c783f017
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=68be443e41696faf9668103139ee1475
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0820b7ac3ac54512b329655266300321
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[8]"
+      Children:
+      - Name: Mode
+        Id: g=2767111a78094fcaab595cac2a41f115
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=059c2543134bd1c38e04fb384095763b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b3002e5b956ef5d4f65d36f1f4daf81e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_8"}
+- Name: Allarme9
+  Id: g=931c51c7f6024597a68c59eecc06ee55
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=32bd52f57a7efaf80bd9ec516ac56ccc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=f2ebd1ea60622221c127d08af07d7d46
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=bb875d4a9c204772a0c7165802b9838d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Acmi_15_01_2025/Model/ArrayAllarme[9]"
+      Children:
+      - Name: Mode
+        Id: g=c76e1497c7054bfd85c67c8199afd8e7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=097f703d9f5769b7d9b3771aa1d3dc81
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=af4deaea4baf62fcec7397a94487b68f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme_9"}

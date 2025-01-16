@@ -7,6 +7,14 @@ using FTOptix.UI;
 using FTOptix.NetLogic;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
+using FTOptix.Recipe;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class ClockLogic : BaseNetLogic

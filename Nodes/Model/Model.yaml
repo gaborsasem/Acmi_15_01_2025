@@ -82,3 +82,16 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+- Name: AllarmiPLC
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: DataLoggerVariable/DataLoggerVariable.yaml
+- File: VariabiliRicetta/VariabiliRicetta.yaml
+- Name: ArrayAllarme
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [10]
+- Name: ColoreRettangolo
+  Type: BaseDataVariableType
+  DataType: Int32

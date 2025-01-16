@@ -175,6 +175,126 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel7
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Allarmi"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel8
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Data_Logger"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel9
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Trend_Page"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel10
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Ricette_Page"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel11
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Ricetta_Pagina2"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel12
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Utenti"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel13
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Traduzioni_localizzazione"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel14
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Acmi_15_01_2025/UI/Screens/Script"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId

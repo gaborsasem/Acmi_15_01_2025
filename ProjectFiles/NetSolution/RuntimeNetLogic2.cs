@@ -22,21 +22,21 @@ using FTOptix.Recipe;
 using FTOptix.OPCUAServer;
 #endregion
 
-public class RuntimeNetLogic1 : BaseNetLogic
+public class RuntimeNetLogic2 : BaseNetLogic
 {
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
-        for (int i = 1; i <= 3; i++)
-        {
-            var mioWidgetMotore = InformationModel.Make<WidgetMotore>("Motore" + i);
-            mioWidgetMotore.SetAlias("AliasMotore", Project.Current.Get<Motore>("Model/Motore" + i));
-            Owner.Add(mioWidgetMotore);
-        }
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
+    }
+
+    [ExportMethod]
+    public void MioMetodo(string testo)
+    {
+        Log.Info(testo);
     }
 }

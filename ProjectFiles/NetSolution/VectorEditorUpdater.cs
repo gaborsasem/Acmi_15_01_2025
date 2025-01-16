@@ -5,6 +5,14 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using System.Reflection;
 using System.Collections.Generic;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
+using FTOptix.Recipe;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class VectorEditorUpdater : BaseNetLogic

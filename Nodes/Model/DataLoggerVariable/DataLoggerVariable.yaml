@@ -1,0 +1,16 @@
+Name: DataLoggerVariable
+Id: g=c611fed4d1586ce1be8b0113368bd229
+Type: FolderType
+Children:
+- Name: Temperatura
+  Id: g=c6f836efb2bb2e246fa323f150cfca61
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Pressione
+  Id: g=5b57f4fccf5433b133d5d4f2fd7b38b1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Umidita
+  Id: g=dfef93fa44681a334feecb14cfa342de
+  Type: BaseDataVariableType
+  DataType: Int32

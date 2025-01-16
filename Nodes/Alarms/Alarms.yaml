@@ -1,3 +1,330 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=d84aa52cacb825952f6db5ce75b7eb12
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=dd3248a7be903e0f532df928ac3ea150
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=de1f0c9766a0d812ed6f3b05ac3412a6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c188ec0175b9256918f6a536f453837d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/AllarmiPLC.0"
+      Children:
+      - Name: Mode
+        Id: g=17e5b51917f36247be3320e7c7e94409
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7449ecc70af811bec3172fb711862b2c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=a8c3013ec255731b6869bd498e0eb711
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme bit 0"}
+- Name: DigitalAlarm2
+  Id: g=a020019f14f4b1cca27cbd38081ba716
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=0a471e10b93a9b5579975211c26b7356
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c595dd5e2168bd26f28be6222a1ed293
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=14c02e06af519b8d7cad93ec5b76cb84
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/AllarmiPLC.1"
+      Children:
+      - Name: Mode
+        Id: g=1ae206d5dd48f4fa4a6d93db1e1b5729
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2ca98a67fd1816a480d4cbc86f0a2afd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=78e3545e24621750e329f1d010d1b076
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Allarme bit 1"}
+  - Name: AutoAcknowledge
+    Id: g=2e51877a2ba2fd3e4c10e9371c5f1edf
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=aec060dea47b7e730b11e619ce383c93
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Severity
+    Id: g=643619447b02554307feab8060237082
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+- Name: ImportAndExportAlarms
+  Id: g=79496c7aa05a3b79583ed5caa6633168
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=2c14ff9213a9ee1ee9c1fd1bbeb66c57
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: ImportAlarms
+    Id: g=62e4f9666584042de3680f9f755f5f09
+  - Class: Method
+    Name: ExportAlarms
+    Id: g=981c83764850c21da3515f7b532c688f
+  - Name: CSVPath
+    Id: g=e7adaf13989cd61f4eb3d517073ecb86
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+  - Name: CharacterSeparator
+    Id: g=f856deb652946858cc7ef7b894247845
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Id: g=87ec177db2370361baca3f64dbc1f18e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=4;LibraryReference
+    Id: g=3e65a0d1174d596ab1d08c148f78888c
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "a6ee1600e16a9f4277b3724d54711be5",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: AlarmsHistoryExporter
+  Id: g=6f0311a09c597d270d3369e3330b69bb
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Id: g=ab2d52ec0b8e7793f66e18077907b9b8
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/Allarmi.csv"
+  - Name: FieldDelimiter
+    Id: g=3a8046f402dda1efb2bb1baffae7eed3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: Table
+    Id: g=079a6f00a3ab637aa6f6275d1807212d
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Acmi_15_01_2025/DataStores/EmbeddedDatabase1/Tables/AlarmsEventLogger1"
+    Children:
+    - Name: Kind
+      Id: g=ed405d4268eb5398d9f7e8ba22cbb31d
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
+  - Name: Query
+    Id: g=16e40199dccd4ea0567d44513f214a22
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: StringFormatter1
+      Id: g=be3ed494feaec6456aa3b473faca3479
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=00452c7481daad90447abe9d0c574627
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"\nSELECT * FROM {0:sql_identifier} WHERE Time BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source0
+        Id: g=1abe78d3f155849b97b7abd5b43481c3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2857bdad9073734ae04d537e6ea7fbf7
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+          Children:
+          - Name: Mode
+            Id: g=898f9b622b8e1ca1faeed52ba5935271
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: Source1
+        Id: g=e7fbda2473d40242d64b13186353eecd
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=136c16c3a182edfe6a5a341d64a91209
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../From"
+          Children:
+          - Name: Mode
+            Id: g=ac140aa517f99df87b8b12af34412117
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: Source2
+        Id: g=8dabaaf8ad4be70f1b968b7da3093930
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=b9a563fa5f326fcb7346f96bd8832e00
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../To"
+          Children:
+          - Name: Mode
+            Id: g=4286073d0300735057143456553bd47a
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+  - Name: From
+    Id: g=5fcf2d0ab86d5c232c12eccc192780ab
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2025-01-01T00:00:00.0000000"
+  - Name: To
+    Id: g=ccd21e1e98ea13ff6da3953ad7e8e6bd
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2025-01-31T00:00:00.0000000"
+  - Class: Method
+    Name: Export
+    Id: g=774e0185fce48a5ca1a39a78c738caa4
+  - Name: WrapFields
+    Id: g=9b5429fdfbdead9451349299a046adb1
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=4;LibraryReference
+    Id: g=8d23a967f91d0bbff78eecd53f3985dd
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "c2477f7ab544386ce428afcd6f7c6d5d",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- File: AllarmiScript/AllarmiScript.yaml

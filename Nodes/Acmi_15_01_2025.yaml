@@ -9,13 +9,18 @@ Children:
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["en-US"]
+    Value: ["en-US","it-IT","ru-RU"]
   - Name: LocaleFallbackList
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
 - Name: Authentication
   Type: PropertyGroup
   Children:
@@ -47,7 +52,7 @@ Children:
   - Name: MinimumPasswordLength
     Type: BaseDataVariableType
     DataType: Byte
-    Value: 8
+    Value: 4
 - Name: AlarmConfiguration
   Type: PropertyGroup
 - File: UI/UI.yaml
@@ -66,3 +71,13 @@ Children:
 - File: System/System.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/Acmi_15_01_2025/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/Acmi_15_01_2025/Recipes/RecipeSchema1/EditModel"
+- File: DizionarioUnitaMisura/DizionarioUnitaMisura.yaml
